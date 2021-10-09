@@ -3,4 +3,79 @@ body {
   font-family: "Catamaran", sans-serif;
   font-size: 16px; }
 
+.mobile-main-header {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #212328;
+  height: 4rem;
+  line-height: 1rem; }
+  .mobile-main-header--nav {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .mobile-main-header--item {
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    padding-top: 1rem;
+    -webkit-transition: margin-top 0.5s ease-in-out;
+    transition: margin-top 0.5s ease-in-out; }
+    .mobile-main-header--item span {
+      display: block;
+      opacity: 0;
+      -webkit-transition: opacity 0.5s ease-in-out;
+      transition: opacity 0.5s ease-in-out; }
+  .mobile-main-header--item:hover {
+    margin-top: -1rem; }
+    .mobile-main-header--item:hover span {
+      opacity: 1; }
+  .mobile-main-header--item:nth-child(5) {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: none;
+    transition: none;
+    width: 100%;
+    height: 5rem;
+    position: relative; }
+    .mobile-main-header--item:nth-child(5) span {
+      -webkit-transition: none;
+      transition: none; }
+    .mobile-main-header--item:nth-child(5):hover {
+      margin-top: 0; }
+    .mobile-main-header--item:nth-child(5) a {
+      position: absolute;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0 0.5rem;
+      top: -1rem;
+      left: 0;
+      height: 4rem;
+      text-align: center;
+      background-color: white;
+      border-radius: 50%;
+      color: black;
+      font-weight: 700; }
+  .mobile-main-header--link {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 500; }
+  .mobile-main-header img {
+    height: 1.6rem; }
+
 /*# sourceMappingURL=style.css.map */

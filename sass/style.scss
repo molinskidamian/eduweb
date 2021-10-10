@@ -5,86 +5,103 @@ body {
     font-size: 16px;
 }
 
-.mobile-main-header {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #212328;
-    height: 4rem;
-    line-height: 1rem;
+@media (max-width: 319px) {
+}
 
-    &--nav {
-        list-style: none;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    &--item {
+@media (min-width: 320px) {
+    .mobile-main-nav {
+        background-color: #212328;
+        position: fixed;
+        bottom: 0;
         width: 100%;
-        height: 4rem;
-        text-align: center;
-        padding-top: 1rem;
-        transition: margin-top 0.5s ease-in-out;
-        span {
-            display: block;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-    }
+        z-index: 10;
 
-    &--item:hover {
-        margin-top: -1rem;
-        span {
-            opacity: 1;
-        }
-    }
-
-    &--item:nth-child(5) {
-        background-color: red;
-        margin: 0;
-        padding: 0;
-        transition: none;
-        // outline: 1px dashed white;
-        width: 100%;
-        height: 5rem;
-        // height: 100%;
-        position: relative;
-        span {
-            transition: none;
-        }
-
-        &:hover {
-            margin-top: 0;
-        }
-
-        a {
-            position: absolute;
+        &--menu {
             display: flex;
-            align-items: center;
-            padding: 0 0.5rem;
-            top: -1rem;
-            left: 0;
+            justify-content: space-around;
             height: 4rem;
+        }
+
+        &--item:not(:nth-child(5)) {
+            width: 100%;
+            // outline: 1px dashed red;
+            // background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.4rem;
+            img {
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        &--link {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
             text-align: center;
-            background-color: white;
-            border-radius: 50%;
-            // padding: 1rem;
-            color: black;
-            font-weight: 700;
+            margin-top: 1rem;
+            transition: margin-top 0.3s ease-in-out;
+
+            span {
+                transition: opacity 0.3s ease-in-out;
+                opacity: 0;
+            }
+
+            &:hover {
+                margin-top: 0rem;
+                span {
+                    opacity: 1;
+                }
+            }
+        }
+
+        li:nth-child(5) {
+            width: 100%;
+            // outline: 1px dotted red;
+            // background-color: red;
+            position: relative;
+            // box-shadow: 0 10px 10px #000;
+            -webkit-box-shadow: 0px -26px 40px -28px rgba(66, 68, 90, 1);
+            -moz-box-shadow: 0px -26px 40px -28px rgba(66, 68, 90, 1);
+            box-shadow: 0px -26px 40px -28px rgba(66, 68, 90, 1);
+
+            a {
+                margin-top: 0;
+                color: black;
+                position: absolute;
+                // bottom: 0;
+                top: -1rem;
+                width: 4rem;
+                height: 4rem;
+                line-height: 4rem;
+                border-radius: 4rem;
+                text-align: center;
+                font-weight: 800;
+                font-size: 0.9rem;
+                background-color: #fff;
+            }
         }
     }
+}
 
-    &--link {
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 0.7rem;
-        font-weight: 500;
-    }
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap
+Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
 
-    img {
-        height: 1.6rem;
-    }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

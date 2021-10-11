@@ -9,6 +9,9 @@ body {
 }
 
 @media (min-width: 320px) {
+    .main-nav {
+        display: none;
+    }
     .mobile-main-nav {
         background-color: #212328;
         position: fixed;
@@ -83,6 +86,15 @@ body {
                 font-weight: 800;
                 font-size: 0.9rem;
                 background-color: #fff;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    margin: -1.4rem auto 0;
+                    width: 40%;
+                    height: 2px;
+                    background-color: #000;
+                }
             }
         }
     }
@@ -92,6 +104,39 @@ body {
 No media query for `xs` since this is the default in Bootstrap
 Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+}
+
+@media (min-width: 735px) {
+    .mobile-main-nav {
+        display: none;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+        height: 60px;
+        background-color: #212328;
+        padding: 0 4.3rem;
+
+        // outline: 1px dashed red;
+
+        &--left {
+            display: flex;
+            align-items: center;
+            #logo {
+                max-height: 2rem;
+                max-width: 2rem;
+            }
+
+            .main-nav--menu {
+                display: flex;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -104,4 +149,14 @@ Small devices (landscape phones, 576px and up) */
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+}
+
+@media (min-width: 1285px) {
+    .main-nav {
+        height: 75px;
+
+        svg {
+            max-height: 3rem;
+        }
+    }
 }

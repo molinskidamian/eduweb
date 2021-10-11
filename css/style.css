@@ -4,6 +4,9 @@ body {
   font-size: 16px; }
 
 @media (min-width: 320px) {
+  .main-nav {
+    display: none; }
+
   .mobile-main-nav {
     background-color: #212328;
     position: fixed;
@@ -67,12 +70,54 @@ body {
         text-align: center;
         font-weight: 800;
         font-size: 0.9rem;
-        background-color: #fff; } }
+        background-color: #fff; }
+        .mobile-main-nav li:nth-child(5) a::after {
+          content: "";
+          display: block;
+          margin: -1.4rem auto 0;
+          width: 40%;
+          height: 2px;
+          background-color: #000; } }
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap
 Small devices (landscape phones, 576px and up) */
+@media (min-width: 735px) {
+  .mobile-main-nav {
+    display: none; }
+
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60px;
+    background-color: #212328;
+    padding: 0 4.3rem; }
+    .main-nav--left {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .main-nav--left #logo {
+        max-height: 2rem;
+        max-width: 2rem; }
+      .main-nav--left .main-nav--menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .main-nav--left .main-nav--menu a {
+          color: white; } }
 /* Medium devices (tablets, 768px and up) */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1285px) {
+  .main-nav {
+    height: 75px; }
+    .main-nav svg {
+      max-height: 3rem; } }
 
 /*# sourceMappingURL=style.css.map */

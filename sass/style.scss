@@ -111,31 +111,95 @@ Small devices (landscape phones, 576px and up) */
         display: none;
     }
 
+    .promo {
+        background-color: #d76996;
+        height: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        a {
+            color: white;
+            font-weight: 500;
+            font-size: 0.9rem;
+
+            &:nth-child(2) {
+                position: absolute;
+                right: 1rem;
+            }
+
+            svg {
+                height: 1rem;
+            }
+        }
+    }
+
     .main-nav {
         display: flex;
         align-items: center;
         height: 60px;
         background-color: #212328;
-        padding: 0 4.3rem;
-
-        // outline: 1px dashed red;
+        padding: 0 2rem;
 
         &--left {
             display: flex;
             align-items: center;
+
             #logo {
-                max-height: 2rem;
-                max-width: 2rem;
+                height: 1.4rem;
+                width: 1.4rem;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        &--menu {
+            display: flex;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 0;
+        }
+
+        &--item {
+            margin: 0 0.8rem;
+        }
+
+        &--link {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+
+            position: relative;
+
+            & > svg {
+                padding-left: 0.1rem;
+                height: 1rem;
+                width: 1rem;
             }
 
-            .main-nav--menu {
-                display: flex;
+            &:hover {
+                &::after {
+                    content: "";
+                    display: block;
+                    width: calc(100% - 1.1rem);
+                    height: 2px;
+                    background-color: white;
+                    position: absolute;
+                    bottom: -0.3rem;
+                }
 
-                a {
-                    color: white;
+                svg {
+                    transition: transform 0.5s ease-in-out;
+                    transform: rotate(180deg);
                 }
             }
         }
+
+
     }
 }
 
@@ -155,8 +219,11 @@ Small devices (landscape phones, 576px and up) */
     .main-nav {
         height: 75px;
 
-        svg {
-            max-height: 3rem;
+        &--left {
+            #logo {
+                height: 3rem;
+                width: 3rem;
+            }
         }
     }
 }

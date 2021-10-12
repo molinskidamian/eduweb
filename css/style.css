@@ -115,6 +115,9 @@ Small devices (landscape phones, 576px and up) */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 60px;
     background-color: #212328;
     padding: 0 2rem; }
@@ -171,7 +174,81 @@ Small devices (landscape phones, 576px and up) */
         transition: transform 0.5s ease-in-out;
         transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
         -webkit-transform: rotate(180deg);
-                transform: rotate(180deg); } }
+                transform: rotate(180deg); }
+    .main-nav--right {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .main-nav--right form {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .main-nav--right form input {
+          height: 2.43rem;
+          border: none;
+          outline: none;
+          border-radius: 2.43rem 0 0 2.43rem;
+          padding: 0 1rem;
+          background-color: #37393d;
+          color: #acacac;
+          font-weight: 600; }
+          .main-nav--right form input::-webkit-input-placeholder {
+            color: #acacac;
+            font-weight: 600; }
+          .main-nav--right form input:-ms-input-placeholder {
+            color: #acacac;
+            font-weight: 600; }
+          .main-nav--right form input::-ms-input-placeholder {
+            color: #acacac;
+            font-weight: 600; }
+          .main-nav--right form input::placeholder {
+            color: #acacac;
+            font-weight: 600; }
+          .main-nav--right form input:focus {
+            background-color: #505258; }
+        .main-nav--right form button {
+          height: 2.43rem;
+          width: 2.43rem;
+          border: none;
+          outline: none;
+          border-radius: 0 2.43rem 2.43rem 0;
+          background-color: #37393d; }
+          .main-nav--right form button svg {
+            height: 1rem;
+            color: #717274; }
+      .main-nav--right .actions {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        border-left: 1px solid #2b2d31;
+        border-right: 1px solid #2b2d31;
+        margin: 0 0.8rem;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .main-nav--right .actions--item {
+          margin: 0 1rem; }
+        .main-nav--right .actions svg {
+          height: 1.3rem; }
+      .main-nav--right .user-menu {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .main-nav--right .user-menu--item:nth-child(2) {
+          margin: 0 0.8rem; }
+        .main-nav--right .user-menu--link {
+          color: white;
+          text-decoration: none;
+          font-weight: 500; }
+          .main-nav--right .user-menu--link svg {
+            max-width: 2rem;
+            max-height: 2rem; } }
 /* Medium devices (tablets, 768px and up) */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */

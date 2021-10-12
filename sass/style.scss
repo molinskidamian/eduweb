@@ -138,6 +138,7 @@ Small devices (landscape phones, 576px and up) */
     .main-nav {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         height: 60px;
         background-color: #212328;
         padding: 0 2rem;
@@ -199,7 +200,90 @@ Small devices (landscape phones, 576px and up) */
             }
         }
 
+        &--right {
+            display: flex;
 
+            form {
+                display: flex;
+                align-items: center;
+
+                input {
+                    height: 2.43rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 2.43rem 0 0 2.43rem;
+                    padding: 0 1rem;
+                    background-color: #37393d;
+                    color: #acacac;
+                    font-weight: 600;
+
+                    &::placeholder {
+                        color: #acacac;
+                        font-weight: 600;
+                    }
+
+                    // &:active {
+                    //     background-color: yellow;
+                    // }
+
+                    &:focus {
+                        background-color: #505258;
+                    }
+                }
+
+                button {
+                    height: 2.43rem;
+                    width: 2.43rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 0 2.43rem 2.43rem 0;
+                    background-color: #37393d;
+
+                    svg {
+                        height: 1rem;
+                        color: #717274;
+                    }
+                }
+            }
+
+            .actions {
+                // padding: 0 3rem;
+                display: flex;
+                border-left: 1px solid #2b2d31;
+                border-right: 1px solid #2b2d31;
+                margin: 0 0.8rem;
+                align-items: center;
+                &--item {
+                    margin: 0 1rem;
+                }
+
+                svg {
+                    height: 1.3rem;
+                }
+            }
+
+            .user-menu {
+                display: flex;
+                align-items: center;
+
+                &--item {
+                    &:nth-child(2) {
+                        margin: 0 0.8rem;
+                    }
+                }
+
+                &--link {
+                    color: white;
+                    text-decoration: none;
+                    font-weight: 500;
+
+                    svg {
+                        max-width: 2rem;
+                        max-height: 2rem;
+                    }
+                }
+            }
+        }
     }
 }
 

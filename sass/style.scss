@@ -9,9 +9,42 @@ body {
 }
 
 @media (min-width: 320px) {
+    .promo {
+        background-color: #d76996;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        a {
+            color: white;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 0.5rem 2rem;
+            // padding-left: 1rem;
+            line-height: 1.1rem;
+            text-align: center;
+
+            &:nth-child(2) {
+                position: absolute;
+                right: 1rem;
+            }
+
+            &:nth-child(2) {
+                display: flex;
+                align-items: center;
+                padding-right: 0;
+                svg {
+                    height: 1rem;
+                }
+            }
+        }
+    }
+
     .main-nav {
         display: none;
     }
+
     .mobile-main-nav {
         background-color: #212328;
         position: fixed;
@@ -94,6 +127,26 @@ body {
                     width: 40%;
                     height: 2px;
                     background-color: #000;
+                }
+            }
+        }
+    }
+
+    footer.main-footer {
+        background-color: #212329;
+        position: absolute;
+        bottom: 4rem;
+        width: 100%;
+
+        social {
+            .social-media {
+                display: flex;
+
+                svg {
+                    height: 2rem;
+                    width: 2rem;
+                    margin: 0;
+                    padding: 0;
                 }
             }
         }
@@ -208,11 +261,13 @@ Small devices (landscape phones, 576px and up) */
                 align-items: center;
 
                 input {
+                    display: none;
                     height: 2.43rem;
+                    width: 6rem;
                     border: none;
                     outline: none;
                     border-radius: 2.43rem 0 0 2.43rem;
-                    padding: 0 1rem;
+                    padding: 0 0 0 1rem;
                     background-color: #37393d;
                     color: #acacac;
                     font-weight: 600;
@@ -236,7 +291,7 @@ Small devices (landscape phones, 576px and up) */
                     width: 2.43rem;
                     border: none;
                     outline: none;
-                    border-radius: 0 2.43rem 2.43rem 0;
+                    border-radius: 2.43rem;
                     background-color: #37393d;
 
                     svg {
@@ -291,11 +346,70 @@ Small devices (landscape phones, 576px and up) */
 @media (min-width: 768px) {
 }
 
+@media (min-width: 860px) {
+    .main-nav {
+        &--right {
+            form {
+                input {
+                    display: none;
+                }
+                button {
+                    border-radius: 2.43rem;
+                }
+            }
+        }
+    }
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1136px) {
+    .main-nav {
+        &--right {
+            form {
+                input {
+                    display: block;
+                    height: 2.43rem;
+                    width: 6rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 2.43rem 0 0 2.43rem;
+                    padding: 0 0 0 1rem;
+                    background-color: #37393d;
+                    color: #acacac;
+                    font-weight: 600;
+
+                    &::placeholder {
+                        color: #acacac;
+                        font-weight: 600;
+                    }
+
+                    &:focus {
+                        background-color: #505258;
+                    }
+                }
+
+                button {
+                    height: 2.43rem;
+                    width: 2.43rem;
+                    border: none;
+                    outline: none;
+                    border-radius: 0 2.43rem 2.43rem 0;
+                    background-color: #37393d;
+
+                    svg {
+                        height: 1rem;
+                        color: #717274;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1200px) {
 }
 
@@ -307,6 +421,38 @@ Small devices (landscape phones, 576px and up) */
             #logo {
                 height: 3rem;
                 width: 3rem;
+            }
+        }
+
+        &--right {
+            form {
+                input {
+                    width: 10rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1336px) {
+    .main-nav {
+        &--right {
+            form {
+                input {
+                    width: 10rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1736px) {
+    .main-nav {
+        &--right {
+            form {
+                input {
+                    width: 10rem;
+                }
             }
         }
     }

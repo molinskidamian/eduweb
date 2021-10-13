@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="38px" viewBox="0 0 39 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>logo-circle-instagram</title>
+    <desc>Created with Sketch.</desc>
+    <g id="--" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo-circle-instagram" transform="translate(0.794770, 0.199842)">
+            <g id="Outline_Icons">
+                <g id="Group">
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" cx="18.7483292" cy="18.7483292" r="17.9671488"></circle>
+                    <path d="M28.9036741,25.2571241 C28.9036741,27.2710071 27.2710071,28.9036741 25.2586865,28.9036741 L12.2379719,28.9036741 C10.2256512,28.9036741 8.5929842,27.2710071 8.5929842,25.2571241 L8.5929842,12.2364095 C8.5929842,10.2240888 10.2256512,8.5929842 12.2379719,8.5929842 L25.2586865,8.5929842 C27.2710071,8.5929842 28.9036741,10.2240888 28.9036741,12.2364095 L28.9036741,25.2571241 Z" id="Path" stroke="#FFFFFF" stroke-width="1.4" stroke-linejoin="round"></path>
+                    <line x1="8.5929842" y1="14.8424273" x2="15.2580152" y2="14.8424273" id="Path" stroke="#FFFFFF" stroke-width="1.4" stroke-linejoin="round"></line>
+                    <line x1="22.2386431" y1="14.8424273" x2="28.9036741" y2="14.8424273" id="Path" stroke="#FFFFFF" stroke-width="1.4" stroke-linejoin="round"></line>
+                    <circle id="Oval" stroke="#FFFFFF" stroke-width="1.4" stroke-linejoin="round" cx="18.7483292" cy="17.9671488" r="4.68708229"></circle>
+                    <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="26.560133 10.9365253 24.9977722 10.9365253 24.9977722 12.4988861 26.560133 12.4988861"></polygon>
+                    <line x1="11.7177057" y1="8.5929842" x2="11.7177057" y2="14.8424273" id="Path" stroke="#FFFFFF" stroke-width="1.4" stroke-linejoin="round"></line>
+                    <line x1="14.8424273" y1="8.5929842" x2="14.8424273" y2="14.8424273" id="Path" stroke="#FFFFFF" stroke-width="1.4" stroke-linejoin="round"></line>
+                </g>
+            </g>
+            <g id="Frames-24px">
+                <rect id="Rectangle" x="0" y="0" width="37.4966583" height="37.4966583"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -4,6 +4,39 @@ body {
   font-size: 16px; }
 
 @media (min-width: 320px) {
+  .promo {
+    background-color: #d76996;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative; }
+    .promo a {
+      color: white;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding: 0.5rem 2rem;
+      line-height: 1.1rem;
+      text-align: center; }
+      .promo a:nth-child(2) {
+        position: absolute;
+        right: 1rem; }
+      .promo a:nth-child(2) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding-right: 0; }
+        .promo a:nth-child(2) svg {
+          height: 1rem; }
+
   .main-nav {
     display: none; }
 
@@ -77,7 +110,22 @@ body {
           margin: -1.4rem auto 0;
           width: 40%;
           height: 2px;
-          background-color: #000; } }
+          background-color: #000; }
+
+  footer.main-footer {
+    background-color: #212329;
+    position: absolute;
+    bottom: 4rem;
+    width: 100%; }
+    footer.main-footer social .social-media {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      footer.main-footer social .social-media svg {
+        height: 2rem;
+        width: 2rem;
+        margin: 0;
+        padding: 0; } }
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap
 Small devices (landscape phones, 576px and up) */
@@ -187,11 +235,13 @@ Small devices (landscape phones, 576px and up) */
             -ms-flex-align: center;
                 align-items: center; }
         .main-nav--right form input {
+          display: none;
           height: 2.43rem;
+          width: 6rem;
           border: none;
           outline: none;
           border-radius: 2.43rem 0 0 2.43rem;
-          padding: 0 1rem;
+          padding: 0 0 0 1rem;
           background-color: #37393d;
           color: #acacac;
           font-weight: 600; }
@@ -214,7 +264,7 @@ Small devices (landscape phones, 576px and up) */
           width: 2.43rem;
           border: none;
           outline: none;
-          border-radius: 0 2.43rem 2.43rem 0;
+          border-radius: 2.43rem;
           background-color: #37393d; }
           .main-nav--right form button svg {
             height: 1rem;
@@ -250,13 +300,62 @@ Small devices (landscape phones, 576px and up) */
             max-width: 2rem;
             max-height: 2rem; } }
 /* Medium devices (tablets, 768px and up) */
+@media (min-width: 860px) {
+  .main-nav--right form input {
+    display: none; }
+  .main-nav--right form button {
+    border-radius: 2.43rem; } }
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1136px) {
+  .main-nav--right form input {
+    display: block;
+    height: 2.43rem;
+    width: 6rem;
+    border: none;
+    outline: none;
+    border-radius: 2.43rem 0 0 2.43rem;
+    padding: 0 0 0 1rem;
+    background-color: #37393d;
+    color: #acacac;
+    font-weight: 600; }
+    .main-nav--right form input::-webkit-input-placeholder {
+      color: #acacac;
+      font-weight: 600; }
+    .main-nav--right form input:-ms-input-placeholder {
+      color: #acacac;
+      font-weight: 600; }
+    .main-nav--right form input::-ms-input-placeholder {
+      color: #acacac;
+      font-weight: 600; }
+    .main-nav--right form input::placeholder {
+      color: #acacac;
+      font-weight: 600; }
+    .main-nav--right form input:focus {
+      background-color: #505258; }
+  .main-nav--right form button {
+    height: 2.43rem;
+    width: 2.43rem;
+    border: none;
+    outline: none;
+    border-radius: 0 2.43rem 2.43rem 0;
+    background-color: #37393d; }
+    .main-nav--right form button svg {
+      height: 1rem;
+      color: #717274; } }
 @media (min-width: 1285px) {
   .main-nav {
     height: 75px; }
     .main-nav--left #logo {
       height: 3rem;
-      width: 3rem; } }
+      width: 3rem; }
+    .main-nav--right form input {
+      width: 10rem; } }
+@media (min-width: 1336px) {
+  .main-nav--right form input {
+    width: 10rem; } }
+@media (min-width: 1736px) {
+  .main-nav--right form input {
+    width: 10rem; } }
 
 /*# sourceMappingURL=style.css.map */

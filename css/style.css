@@ -3,6 +3,11 @@ body {
   font-family: "Catamaran", sans-serif;
   font-size: 16px; }
 
+h1 {
+  font-size: 2rem;
+  line-height: 2.1rem;
+  font-weight: 700; }
+
 @media (min-width: 320px) {
   .promo {
     background-color: #d76996;
@@ -112,20 +117,48 @@ body {
           height: 2px;
           background-color: #000; }
 
-  footer.main-footer {
+  .slogan {
+    padding: 80px 24px 32px; }
+    .slogan h1 {
+      margin-bottom: 1rem; }
+    .slogan p {
+      font-weight: 300;
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      margin-bottom: 2rem; }
+    .slogan a:link,
+    .slogan a:visited {
+      color: white;
+      background-color: #0976d8;
+      padding: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2rem;
+      font-size: 0.8rem; }
+    .slogan a:hover {
+      background-color: #3b76d8; }
+
+  .main-footer {
     background-color: #212329;
     position: absolute;
     bottom: 4rem;
     width: 100%; }
-    footer.main-footer social .social-media {
+    .main-footer .social .social-media {
+      list-style: none;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
-      footer.main-footer social .social-media svg {
-        height: 2rem;
-        width: 2rem;
-        margin: 0;
-        padding: 0; } }
+    .main-footer .social-icon {
+      height: 2rem;
+      background-color: transparent;
+      border-radius: 2rem; }
+      .main-footer .social-icon.facebook:hover {
+        fill: #1877f2; }
+      .main-footer .social-icon.instagram:hover {
+        fill: #e4405f; }
+      .main-footer .social-icon.youtube:hover {
+        fill: #ff0000; } }
 /* Extra small devices (portrait phones, less than 576px)
 No media query for `xs` since this is the default in Bootstrap
 Small devices (landscape phones, 576px and up) */
@@ -298,7 +331,10 @@ Small devices (landscape phones, 576px and up) */
           font-weight: 500; }
           .main-nav--right .user-menu--link svg {
             max-width: 2rem;
-            max-height: 2rem; } }
+            max-height: 2rem; }
+
+  .main-footer {
+    position: static; } }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 860px) {
   .main-nav--right form input {

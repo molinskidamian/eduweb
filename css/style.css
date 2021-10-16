@@ -334,7 +334,8 @@ Small devices (landscape phones, 576px and up) */
             max-height: 2rem; }
 
   .main-footer {
-    position: static; } }
+    position: fixed;
+    bottom: 0; } }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 860px) {
   .main-nav--right form input {

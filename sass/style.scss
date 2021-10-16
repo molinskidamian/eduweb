@@ -390,8 +390,9 @@ Small devices (landscape phones, 576px and up) */
     }
 
     .main-footer {
-        position: static;
-        // bottom: 0;
+        // position: static;
+        position: fixed;
+        bottom: 0;
     }
 }
 

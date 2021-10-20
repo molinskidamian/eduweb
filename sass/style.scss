@@ -356,12 +356,53 @@ Small devices (landscape phones, 576px and up) */
                 border-right: 1px solid #2b2d31;
                 margin: 0 0.8rem;
                 align-items: center;
+
                 &--item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     margin: 0 1rem;
+                    width: 100%;
+                    height: 100%;
+
+                    &:hover {
+                        align-items: flex-start;
+
+                        & > a {
+                            & svg {
+                                padding-top: 15%;
+                                transition: padding-top 0.2s ease;
+                            }
+                        }
+
+                        & > a > p {
+                            transition: opacity 0.3s ease;
+                            opacity: 1;
+                            width: 100%;
+                        }
+                    }
                 }
 
+                &--link {
+                    // display: flex;
+                    // justify-content: center;
+
+                    margin: 0 auto;
+                    text-align: center;
+                    color: white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 0.6rem;
+                    line-height: 1rem;
+
+                    & > p {
+                        // display: none;
+                        opacity: 0;
+                    }
+                }
                 svg {
                     height: 1.3rem;
+                    padding-top: 25%;
                 }
             }
 

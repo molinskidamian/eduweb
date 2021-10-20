@@ -313,9 +313,44 @@ Small devices (landscape phones, 576px and up) */
             -ms-flex-align: center;
                 align-items: center; }
         .main-nav--right .actions--item {
-          margin: 0 1rem; }
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 0 1rem;
+          width: 100%;
+          height: 100%; }
+          .main-nav--right .actions--item:hover {
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start; }
+            .main-nav--right .actions--item:hover > a svg {
+              padding-top: 15%;
+              -webkit-transition: padding-top 0.2s ease;
+              transition: padding-top 0.2s ease; }
+            .main-nav--right .actions--item:hover > a > p {
+              -webkit-transition: opacity 0.3s ease;
+              transition: opacity 0.3s ease;
+              opacity: 1;
+              width: 100%; }
+        .main-nav--right .actions--link {
+          margin: 0 auto;
+          text-align: center;
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 0.6rem;
+          line-height: 1rem; }
+          .main-nav--right .actions--link > p {
+            opacity: 0; }
         .main-nav--right .actions svg {
-          height: 1.3rem; }
+          height: 1.3rem;
+          padding-top: 25%; }
       .main-nav--right .user-menu {
         display: -webkit-box;
         display: -ms-flexbox;

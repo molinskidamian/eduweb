@@ -212,6 +212,10 @@ Small devices (landscape phones, 576px and up) */
         display: none;
     }
 
+    .show {
+        display: block;
+    }
+
     .promo {
         background-color: #d76996;
         height: 23px;
@@ -265,6 +269,54 @@ Small devices (landscape phones, 576px and up) */
 
         &--item {
             margin: 0 0.8rem;
+            position: relative;
+
+            &:hover {
+                outline: 1px dashed red;
+            }
+
+            .main-nav--sub-menu {
+                display: block;
+                position: absolute;
+                top: 2rem;
+                left: -1.5rem;
+                z-index: 10;
+                background-color: #fff;
+                width: 15rem;
+                padding: 1.5rem;
+                border-radius: 1rem;
+                // outline: 1px dashed red;
+
+                li {
+                    padding: 1rem 0;
+
+                    a {
+                        color: #161616;
+                        font-weight: 700;
+                        text-decoration: none;
+                        font-size: 0.9rem;
+                        display: flex;
+                        align-items: center;
+
+                        svg {
+                            width: 1.5rem;
+                            margin-right: 1rem;
+                        }
+
+                        svg:nth-child(2) {
+                            fill: #fb677c;
+                        }
+
+                        &:hover {
+                            background-color: #f7f7f7;
+                        }
+                    }
+                }
+            }
+
+            & > ul {
+                display: none;
+            }
         }
 
         &--link {
@@ -458,6 +510,13 @@ Small devices (landscape phones, 576px and up) */
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .content {
+        .slogan {
+            p {
+                max-width: 50vw;
+            }
+        }
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */

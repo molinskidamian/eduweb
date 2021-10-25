@@ -166,6 +166,9 @@ Small devices (landscape phones, 576px and up) */
   .mobile-main-nav {
     display: none; }
 
+  .show {
+    display: block; }
+
   .promo {
     background-color: #d76996;
     height: 23px;
@@ -224,7 +227,42 @@ Small devices (landscape phones, 576px and up) */
       margin: 0;
       padding: 0; }
     .main-nav--item {
-      margin: 0 0.8rem; }
+      margin: 0 0.8rem;
+      position: relative; }
+      .main-nav--item:hover {
+        outline: 1px dashed red; }
+      .main-nav--item .main-nav--sub-menu {
+        display: block;
+        position: absolute;
+        top: 2rem;
+        left: -1.5rem;
+        z-index: 10;
+        background-color: #fff;
+        width: 15rem;
+        padding: 1.5rem;
+        border-radius: 1rem; }
+        .main-nav--item .main-nav--sub-menu li {
+          padding: 1rem 0; }
+          .main-nav--item .main-nav--sub-menu li a {
+            color: #161616;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            .main-nav--item .main-nav--sub-menu li a svg {
+              width: 1.5rem;
+              margin-right: 1rem; }
+            .main-nav--item .main-nav--sub-menu li a svg:nth-child(2) {
+              fill: #fb677c; }
+            .main-nav--item .main-nav--sub-menu li a:hover {
+              background-color: #f7f7f7; }
+      .main-nav--item > ul {
+        display: none; }
     .main-nav--link {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -378,6 +416,9 @@ Small devices (landscape phones, 576px and up) */
   .main-nav--right form button {
     border-radius: 2.43rem; } }
 /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .content .slogan p {
+    max-width: 50vw; } }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1136px) {
   .main-nav--right form input {

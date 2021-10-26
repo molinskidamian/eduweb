@@ -8,7 +8,46 @@ h1 {
   line-height: 2.1rem;
   font-weight: 700; }
 
+.section-h2 {
+  font-size: 2rem;
+  font-weight: 500; }
+
+.btn-primary {
+  background-color: #0976d8; }
+
 @media (min-width: 320px) {
+  .opinion {
+    position: fixed;
+    background-color: #f33e54;
+    z-index: 100;
+    color: white;
+    left: 0;
+    top: 50%;
+    padding: 0.6rem 0.6rem;
+    margin: 0;
+    font-size: 0.9rem;
+    border-radius: 0 0 0.2rem 0.2rem;
+    -webkit-transform: translate(-30%, -50%) rotate(-90deg);
+            transform: translate(-30%, -50%) rotate(-90deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-decoration: none; }
+    .opinion > span {
+      margin-left: 0.4rem;
+      letter-spacing: 0.05rem; }
+    .opinion svg {
+      height: 1.2rem;
+      -webkit-transform: translate(0%, -10%) rotate(90deg);
+              transform: translate(0%, -10%) rotate(90deg); }
+    .opinion:hover {
+      padding-top: 0.8rem;
+      -webkit-box-shadow: 0px 8px 100px -7px #42445a;
+      box-shadow: 0px 8px 100px -7px #42445a; }
+
   .promo {
     background-color: #d76996;
     display: -webkit-box;
@@ -117,27 +156,78 @@ h1 {
           height: 2px;
           background-color: #000; }
 
-  .slogan {
-    padding: 80px 24px 32px; }
-    .slogan h1 {
-      margin-bottom: 1rem; }
-    .slogan p {
-      font-weight: 300;
-      font-size: 1.1rem;
-      line-height: 1.5rem;
-      margin-bottom: 2rem; }
-    .slogan a:link,
-    .slogan a:visited {
-      color: white;
-      background-color: #0976d8;
-      padding: 0.8rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      text-decoration: none;
-      border-radius: 2rem;
-      font-size: 0.8rem; }
-    .slogan a:hover {
-      background-color: #3b76d8; }
+  .content {
+    padding: 0 0 0 5vw; }
+    .content .slogan {
+      padding: 80px 24px 32px; }
+      .content .slogan h1 {
+        margin-bottom: 1rem; }
+      .content .slogan p {
+        font-weight: 300;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        margin-bottom: 2rem; }
+      .content .slogan a:link,
+      .content .slogan a:visited {
+        color: white;
+        background-color: #0976d8;
+        padding: 0.8rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 2rem;
+        font-size: 0.8rem; }
+      .content .slogan a:hover {
+        background-color: #3b76d8; }
+    .content .last-lern {
+      margin-top: 4rem; }
+      .content .last-lern header {
+        display: block; }
+        .content .last-lern header a {
+          display: inline-block;
+          margin-top: 0.8rem;
+          color: #0976d8;
+          text-decoration: none;
+          font-weight: 600; }
+      .content .last-lern--inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: auto; }
+      .content .last-lern--item {
+        margin: 2.5rem 1rem;
+        width: 390px;
+        -webkit-box-shadow: 0px 20px 45px -30px #42445a;
+        box-shadow: 0px 20px 45px -30px #42445a; }
+        .content .last-lern--item header {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          height: 3.1rem;
+          border-radius: 0.4rem 0.4rem 0 0;
+          padding: 0 1rem;
+          background-color: #ecd61c; }
+          .content .last-lern--item header svg {
+            height: 3rem;
+            width: 3rem;
+            border-radius: 2rem;
+            margin-top: 1.3rem; }
+          .content .last-lern--item header span {
+            background-color: #fff;
+            border-radius: 1rem;
+            padding: 0.3rem;
+            font-size: 0.8rem;
+            color: #636262;
+            font-weight: 600; }
+        .content .last-lern--item .content--item {
+          max-height: 15.75rem;
+          padding: 2rem; }
 
   .main-footer {
     background-color: #212329;
@@ -229,8 +319,6 @@ Small devices (landscape phones, 576px and up) */
     .main-nav--item {
       margin: 0 0.8rem;
       position: relative; }
-      .main-nav--item:hover {
-        outline: 1px dashed red; }
       .main-nav--item .main-nav--sub-menu {
         display: block;
         position: absolute;
@@ -240,7 +328,9 @@ Small devices (landscape phones, 576px and up) */
         background-color: #fff;
         width: 15rem;
         padding: 1.5rem;
-        border-radius: 1rem; }
+        border-radius: 1rem;
+        -webkit-box-shadow: 0px 8px 10px -7px rgba(66, 68, 90, 0.5);
+        box-shadow: 0px 8px 10px -7px rgba(66, 68, 90, 0.5); }
         .main-nav--item .main-nav--sub-menu li {
           padding: 1rem 0; }
           .main-nav--item .main-nav--sub-menu li a {
@@ -297,7 +387,10 @@ Small devices (landscape phones, 576px and up) */
     .main-nav--right {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
       .main-nav--right form {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -406,6 +499,16 @@ Small devices (landscape phones, 576px and up) */
             max-width: 2rem;
             max-height: 2rem; }
 
+  .content .slogan {
+    margin: 2rem 0; }
+    .content .slogan h1 {
+      font-size: 2.5rem; }
+    .content .slogan p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 200;
+      letter-spacing: 0.1rem; }
+
   .main-footer {
     position: fixed;
     bottom: 0; } }
@@ -455,7 +558,13 @@ Small devices (landscape phones, 576px and up) */
     background-color: #37393d; }
     .main-nav--right form button svg {
       height: 1rem;
-      color: #717274; } }
+      color: #717274; }
+
+  .content .slogan {
+    padding: 8rem 2rem;
+    background: url("../assets/images/wyszukiwanie.svg") right 5% center no-repeat;
+    background-size: auto auto;
+    height: 40vh; } }
 @media (min-width: 1285px) {
   .main-nav {
     height: 75px; }

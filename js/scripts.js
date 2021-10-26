@@ -18,3 +18,14 @@
         }
     });
 })();
+
+(function () {
+    // promo close
+    const promo = document.querySelector(".promo");
+    const promoClose = document.querySelector(".promo-close");
+
+    promoClose.addEventListener("click", () => {
+        console.log("click");
+        promo.style.display = "none";
+    });
+})();

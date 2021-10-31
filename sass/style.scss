@@ -280,8 +280,8 @@ h1 {
 
     .main-footer {
         background-color: #212329;
-        position: absolute;
-        bottom: 4rem;
+        // position: absolute;
+        // bottom: 4rem;
         width: 100%;
 
         // margin-top: 200px;
@@ -615,8 +615,8 @@ Small devices (landscape phones, 576px and up) */
 
     .main-footer {
         // position: static;
-        position: fixed;
-        bottom: 0;
+        // position: fixed;
+        // bottom: 0;
     }
 }
 

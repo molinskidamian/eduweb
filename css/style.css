@@ -231,8 +231,6 @@ h1 {
 
   .main-footer {
     background-color: #212329;
-    position: absolute;
-    bottom: 4rem;
     width: 100%; }
     .main-footer .social .social-media {
       list-style: none;
@@ -507,11 +505,7 @@ Small devices (landscape phones, 576px and up) */
       font-size: 1.5rem;
       line-height: 2rem;
       font-weight: 200;
-      letter-spacing: 0.1rem; }
-
-  .main-footer {
-    position: fixed;
-    bottom: 0; } }
+      letter-spacing: 0.1rem; } }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 860px) {
   .main-nav--right form input {

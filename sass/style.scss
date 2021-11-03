@@ -276,6 +276,32 @@ h1 {
                 }
             }
         }
+
+        .slider {
+            outline: 1px dashed red;
+            margin-right: 5vw;
+            height: 15rem;
+            // width: 100vw;
+            position: relative;
+
+            .btn {
+                outline: 1px dashed green;
+            }
+
+            .btn-prev {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .btn-next {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(50%, -50%);
+            }
+        }
     }
 
     .main-footer {
@@ -283,6 +309,7 @@ h1 {
         // position: absolute;
         // bottom: 4rem;
         width: 100%;
+        margin-top: 2rem;
 
         // margin-top: 200px;
 

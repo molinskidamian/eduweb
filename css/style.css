@@ -247,6 +247,16 @@ h1 {
         top: 50%;
         -webkit-transform: translate(50%, -50%);
                 transform: translate(50%, -50%); }
+      .content .slider .slider-inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 1rem;
+        overflow: auto; }
+        .content .slider .slider-inner .last-lern--course {
+          outline: 1px solid blue;
+          min-width: 360px;
+          height: 13rem; }
 
   .main-footer {
     background-color: #212329;

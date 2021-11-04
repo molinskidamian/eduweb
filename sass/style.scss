@@ -301,6 +301,18 @@ h1 {
                 top: 50%;
                 transform: translate(50%, -50%);
             }
+
+            .slider-inner {
+                display: flex;
+                padding: 1rem;
+                overflow: auto;
+
+                .last-lern--course {
+                    outline: 1px solid blue;
+                    min-width: 360px;
+                    height: 13rem;
+                }
+            }
         }
     }
 

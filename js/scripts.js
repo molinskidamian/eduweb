@@ -29,3 +29,19 @@
         promo.style.display = "none";
     });
 })();
+
+(function () {
+    const wrapper = document.querySelector(".slider-inner");
+    const btnPrev = document.querySelector(".btn-prev");
+    const btnNext = document.querySelector(".btn-next");
+
+    btnNext.addEventListener("click", () => {
+        console.log("next");
+        wrapper.scrollLeft += 280;
+    });
+
+    btnPrev.addEventListener("click", () => {
+        console.log("prev");
+        wrapper.scrollLeft -= 280;
+    });
+})();

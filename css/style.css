@@ -252,11 +252,14 @@ h1 {
         display: -ms-flexbox;
         display: flex;
         padding: 1rem;
-        overflow: auto; }
+        overflow: hidden; }
         .content .slider .slider-inner .last-lern--course {
           outline: 1px solid blue;
           min-width: 360px;
-          height: 13rem; }
+          height: 13rem;
+          margin-right: 1rem; }
+          .content .slider .slider-inner .last-lern--course:last-child {
+            margin-right: 0; }
 
   .main-footer {
     background-color: #212329;

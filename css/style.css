@@ -252,7 +252,7 @@ h1 {
         display: -ms-flexbox;
         display: flex;
         padding: 1rem;
-        overflow: hidden; }
+        overflow: auto; }
         .content .slider .slider-inner .last-lern--course {
           outline: 1px solid blue;
           min-width: 360px;

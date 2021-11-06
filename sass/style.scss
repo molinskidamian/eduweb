@@ -305,14 +305,16 @@ h1 {
             .slider-inner {
                 display: flex;
                 padding: 1rem;
-                // overflow: auto;
-                overflow: hidden;
+                // overflow: scroll;
+                // overflow: hidden;
+                overflow: auto;
 
                 .last-lern--course {
                     outline: 1px solid blue;
                     min-width: 360px;
                     height: 13rem;
                     margin-right: 1rem;
+                    // position: static;
 
                     &:last-child {
                         margin-right: 0;

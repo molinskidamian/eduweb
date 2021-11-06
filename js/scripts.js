@@ -32,16 +32,32 @@
 
 (function () {
     const wrapper = document.querySelector(".slider-inner");
+    const courses = document.querySelectorAll(".last-lern--course");
     const btnPrev = document.querySelector(".btn-prev");
     const btnNext = document.querySelector(".btn-next");
+    let steps = 0;
 
     btnNext.addEventListener("click", () => {
         console.log("next");
-        wrapper.scrollLeft += 280;
+        // wrapper.scrollLeft += 280;
+        steps += 100;
+
+        courses.forEach((cours) => {
+            cours.style.cssText =
+                // "transform: translateX(`${move px}`); transition: .3s transform ease";
+                `transform: translateX(-${steps}px); transition: .3s transform ease`;
+        });
     });
 
     btnPrev.addEventListener("click", () => {
         console.log("prev");
-        wrapper.scrollLeft -= 280;
+        // wrapper.scrollLeft -= 280;
+        // steps = 0;
+        steps += 100;
+        courses.forEach((cours) => {
+            cours.style.cssText =
+                // "transform: translateX(`${move px}`); transition: .3s transform ease";
+                `transform: translateX(${steps}px); transition: .3s transform ease`;
+        });
     });
 })();

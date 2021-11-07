@@ -229,12 +229,30 @@ h1 {
           max-height: 15.75rem;
           padding: 2rem; }
     .content .slider {
-      outline: 1px dashed red;
       margin-right: 5vw;
+      margin-top: 2vw;
+      margin-bottom: 2vw;
       height: 15rem;
       position: relative; }
+      .content .slider:hover .btn {
+        -webkit-transition: opacity 0.2s ease-in-out;
+        transition: opacity 0.2s ease-in-out;
+        opacity: 1; }
       .content .slider .btn {
-        outline: 1px dashed green; }
+        opacity: 0;
+        border: none;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 20px -13px #42445a;
+        box-shadow: 0px 0px 20px -13px #42445a; }
+        .content .slider .btn svg {
+          width: 2rem;
+          fill: #b9b9b9;
+          color: #b9b9b9; }
+        .content .slider .btn:hover {
+          -webkit-box-shadow: 0px 0px 30px -11px #42445a;
+          box-shadow: 0px 0px 30px -11px #42445a; }
       .content .slider .btn-prev {
         position: absolute;
         left: 0;
@@ -252,14 +270,83 @@ h1 {
         display: -ms-flexbox;
         display: flex;
         padding: 1rem;
-        overflow: auto; }
+        overflow: hidden; }
         .content .slider .slider-inner .last-lern--course {
-          outline: 1px solid blue;
           min-width: 360px;
+          max-width: 360px;
           height: 13rem;
-          margin-right: 1rem; }
+          margin-right: 1rem;
+          border-radius: 0.5rem;
+          -webkit-box-shadow: 0px 0px 20px -13px #42445a;
+          box-shadow: 0px 0px 20px -13px #42445a; }
+          .content .slider .slider-inner .last-lern--course header {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            height: 3rem;
+            background-color: #ecd61a;
+            border-radius: 0.5rem 0.5rem 0 0; }
+            .content .slider .slider-inner .last-lern--course header .header--left {
+              position: relative;
+              width: 100%;
+              height: 100%; }
+            .content .slider .slider-inner .last-lern--course header .header--right {
+              width: 100%;
+              height: 100%;
+              line-height: 3rem;
+              text-align: right;
+              padding-right: 1rem; }
+            .content .slider .slider-inner .last-lern--course header svg {
+              position: absolute;
+              top: 0.5rem;
+              left: 0.5rem;
+              border-radius: 50%; }
+            .content .slider .slider-inner .last-lern--course header span {
+              color: #636262;
+              background-color: #fff;
+              padding: 0 1rem;
+              border-radius: 0.5rem;
+              font-weight: 600;
+              font-size: 0.8rem; }
           .content .slider .slider-inner .last-lern--course:last-child {
             margin-right: 0; }
+          .content .slider .slider-inner .last-lern--course:hover {
+            -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
+            transition: -webkit-box-shadow 0.4s ease-in-out;
+            transition: box-shadow 0.4s ease-in-out;
+            transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
+            -webkit-box-shadow: 0px 0px 30px -11px #42445a;
+            box-shadow: 0px 0px 30px -11px #42445a; }
+          .content .slider .slider-inner .last-lern--course .content--item {
+            padding: 3vw 2vw; }
+            .content .slider .slider-inner .last-lern--course .content--item h3 {
+              font-size: 1.5rem;
+              font-weight: 500; }
+            .content .slider .slider-inner .last-lern--course .content--item p.time-left {
+              color: #75767a;
+              font-weight: 300;
+              margin: 1rem 0; }
+            .content .slider .slider-inner .last-lern--course .content--item progress {
+              width: 100%;
+              height: 1.3rem; }
+    .content .slogans {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      outline: 1px solid red; }
+      .content .slogans .slogan {
+        width: 50%; }
+      .content .slogans .slogan--left {
+        outline: 1px dashed green; }
 
   .main-footer {
     background-color: #212329;

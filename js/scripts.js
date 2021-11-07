@@ -37,27 +37,53 @@
     const btnNext = document.querySelector(".btn-next");
     let steps = 0;
 
+    function width(numItems, itemWidth) {
+        return numItems.length * itemWidth.offsetWidth;
+    }
+
+    // let widthCourses = `${
+    //     courses[0].offsetWidth * courses.length - wrapper.offsetWidth + 3 * 18
+    // }`;
+
+    /** !!!!! Obliczenie przesunięcia */
+    // let widthCourses = `${steps}`;
+
+    console.log(
+        `Szerokość kursów: ${courses[0].offsetWidth * courses.length}px`
+    );
+
     btnNext.addEventListener("click", () => {
         console.log("next");
         // wrapper.scrollLeft += 280;
-        steps += 100;
 
-        courses.forEach((cours) => {
-            cours.style.cssText =
-                // "transform: translateX(`${move px}`); transition: .3s transform ease";
-                `transform: translateX(-${steps}px); transition: .3s transform ease`;
-        });
+        if (
+            steps <=
+            courses.length * courses[0].offsetWidth - wrapper.offsetWidth
+        ) {
+            steps += 325;
+            courses.forEach((cours) => {
+                cours.style.cssText =
+                    // "transform: translateX(`${move px}`); transition: .3s transform ease";
+                    // `transform: translateX(-${steps}px); transition: .3s transform ease-in-out`;
+                    `transform: translateX(-${
+                        steps - 16
+                    }px); transition: .3s transform ease-in-out`;
+            });
+        }
     });
 
     btnPrev.addEventListener("click", () => {
         console.log("prev");
         // wrapper.scrollLeft -= 280;
         // steps = 0;
-        steps += 100;
+        if (steps > 0) {
+            steps -= 325;
+        }
         courses.forEach((cours) => {
             cours.style.cssText =
                 // "transform: translateX(`${move px}`); transition: .3s transform ease";
-                `transform: translateX(${steps}px); transition: .3s transform ease`;
+                `transform: translateX(-${steps}px); transition: .3s transform ease`;
         });
+        // steps = 0;
     });
 })();

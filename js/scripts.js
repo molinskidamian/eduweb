@@ -41,13 +41,6 @@
         return numItems.length * itemWidth.offsetWidth;
     }
 
-    // let widthCourses = `${
-    //     courses[0].offsetWidth * courses.length - wrapper.offsetWidth + 3 * 18
-    // }`;
-
-    /** !!!!! Obliczenie przesunięcia */
-    // let widthCourses = `${steps}`;
-
     console.log(
         `Szerokość kursów: ${courses[0].offsetWidth * courses.length}px`
     );
@@ -56,18 +49,21 @@
         console.log("next");
         // wrapper.scrollLeft += 280;
 
+        const countSteps = (wrapper, item) => {
+            return;
+        };
+
         if (
             steps <=
             courses.length * courses[0].offsetWidth - wrapper.offsetWidth
         ) {
-            steps += 325;
+            // steps += 325;
+            steps += 376;
             courses.forEach((cours) => {
                 cours.style.cssText =
                     // "transform: translateX(`${move px}`); transition: .3s transform ease";
                     // `transform: translateX(-${steps}px); transition: .3s transform ease-in-out`;
-                    `transform: translateX(-${
-                        steps - 16
-                    }px); transition: .3s transform ease-in-out`;
+                    `transform: translateX(-${steps}px); transition: .3s transform ease-in-out`;
             });
         }
     });

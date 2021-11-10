@@ -238,39 +238,13 @@ h1 {
         -webkit-transition: opacity 0.2s ease-in-out;
         transition: opacity 0.2s ease-in-out;
         opacity: 1; }
-      .content .slider .btn {
-        opacity: 0;
-        border: none;
-        width: 4.5rem;
-        height: 4.5rem;
-        border-radius: 50%;
-        -webkit-box-shadow: 0px 0px 20px -13px #42445a;
-        box-shadow: 0px 0px 20px -13px #42445a; }
-        .content .slider .btn svg {
-          width: 2rem;
-          fill: #b9b9b9;
-          color: #b9b9b9; }
-        .content .slider .btn:hover {
-          -webkit-box-shadow: 0px 0px 30px -11px #42445a;
-          box-shadow: 0px 0px 30px -11px #42445a; }
-      .content .slider .btn-prev {
-        position: absolute;
-        left: 0;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%); }
-      .content .slider .btn-next {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        -webkit-transform: translate(50%, -50%);
-                transform: translate(50%, -50%); }
       .content .slider .slider-inner {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         padding: 1rem;
-        overflow: hidden; }
+        overflow: hidden;
+        outline: 1px dashed red; }
         .content .slider .slider-inner .last-lern--course {
           min-width: 360px;
           max-width: 360px;
@@ -316,15 +290,13 @@ h1 {
               font-size: 0.8rem; }
           .content .slider .slider-inner .last-lern--course:last-child {
             margin-right: 0; }
-          .content .slider .slider-inner .last-lern--course:hover {
-            -webkit-transition: -webkit-box-shadow 0.4s ease-in-out;
-            transition: -webkit-box-shadow 0.4s ease-in-out;
-            transition: box-shadow 0.4s ease-in-out;
-            transition: box-shadow 0.4s ease-in-out, -webkit-box-shadow 0.4s ease-in-out;
-            -webkit-box-shadow: 0px 0px 30px -11px #42445a;
-            box-shadow: 0px 0px 30px -11px #42445a; }
+          .content .slider .slider-inner .last-lern--course:hover > header {
+            height: 100%;
+            -webkit-transition: height 0.4s ease-in-out;
+            transition: height 0.4s ease-in-out;
+            border-radius: 0.5rem; }
           .content .slider .slider-inner .last-lern--course .content--item {
-            padding: 3vw 2vw; }
+            padding: 2vw; }
             .content .slider .slider-inner .last-lern--course .content--item h3 {
               font-size: 1.5rem;
               font-weight: 500; }
@@ -335,6 +307,42 @@ h1 {
             .content .slider .slider-inner .last-lern--course .content--item progress {
               width: 100%;
               height: 1.3rem; }
+      .content .slider .btn {
+        opacity: 0;
+        border: none;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 0px 20px -13px #42445a;
+        box-shadow: 0px 0px 20px -13px #42445a; }
+        .content .slider .btn svg {
+          width: 2rem;
+          fill: #b9b9b9;
+          color: #b9b9b9; }
+        .content .slider .btn:hover {
+          -webkit-box-shadow: 0px 0px 30px -11px #42445a;
+          box-shadow: 0px 0px 30px -11px #42445a; }
+      .content .slider .btn-prev,
+      .content .slider .btn-next {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: absolute;
+        top: 50%; }
+      .content .slider .btn-prev {
+        left: 0;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+      .content .slider .btn-next {
+        right: 0;
+        -webkit-transform: translate(50%, -50%);
+                transform: translate(50%, -50%); }
     .content .slogans {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -347,6 +355,23 @@ h1 {
         width: 50%; }
       .content .slogans .slogan--left {
         outline: 1px dashed green; }
+    .content .test-wrapper {
+      margin: 2rem 0;
+      outline: 1px dashed blue;
+      padding: 1rem;
+      position: relative; }
+      .content .test-wrapper .test {
+        border: 1px solid red;
+        width: 360px;
+        height: 10rem;
+        opacity: 1; }
+        .content .test-wrapper .test:hover {
+          opacity: 0; }
+      .content .test-wrapper .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1; }
 
   .main-footer {
     background-color: #212329;

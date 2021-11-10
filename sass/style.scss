@@ -278,7 +278,7 @@ h1 {
         }
 
         .slider {
-            // outline: 1px dashed red;
+            // outline: 1px dashed blue;
             margin-right: 5vw;
             margin-top: 2vw;
             margin-bottom: 2vw;
@@ -291,55 +291,14 @@ h1 {
                     opacity: 1;
                 }
             }
-            .btn {
-                // outline: 1px dashed green;
-                opacity: 0;
-                border: none;
-                // outline: 1px solid red;
-                width: 4.5rem;
-                height: 4.5rem;
-                border-radius: 50%;
-
-                -webkit-box-shadow: 0px 0px 20px -13px rgba(66, 68, 90, 1);
-                -moz-box-shadow: 0px 0px 20px -13px rgba(66, 68, 90, 1);
-                box-shadow: 0px 0px 20px -13px rgba(66, 68, 90, 1);
-
-                svg {
-                    width: 2rem;
-                    fill: #b9b9b9;
-                    color: #b9b9b9;
-                }
-
-                &:hover {
-                    -webkit-box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
-                    -moz-box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
-                    box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
-                }
-            }
-
-            .btn-prev {
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translate(-50%, -50%);
-            }
-
-            .btn-next {
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translate(50%, -50%);
-            }
 
             .slider-inner {
                 display: flex;
                 padding: 1rem;
-                // overflow: scroll;
                 overflow: hidden;
-                // overflow: auto;
+                outline: 1px dashed red;
 
                 .last-lern--course {
-                    // outline: 1px solid blue;
                     min-width: 360px;
                     max-width: 360px;
                     height: 13rem;
@@ -396,16 +355,27 @@ h1 {
                         margin-right: 0;
                     }
 
-                    &:hover {
-                        transition: box-shadow 0.4s ease-in-out;
-                        -webkit-box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
-                        -moz-box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
-                        box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
+                    // &:hover {
+                    //     transition: box-shadow 0.4s ease-in-out;
+                    //     -webkit-box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
+                    //     -moz-box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
+                    //     box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
+                    //     background-color: #ecd61a;
+                    //     // transform: scaleY(1);
+                    //     transform-origin: top center;
+                    //     transform: translate(-100%, 50%) translate(100%, -50%);
+                    //     transition: all 0.2s ease-in-out;
+                    // }
+
+                    &:hover > header {
+                        height: 100%;
+                        transition: height 0.4s ease-in-out;
+                        border-radius: 0.5rem;
                     }
 
                     .content--item {
                         // padding-top: 8vw;
-                        padding: 3vw 2vw;
+                        padding: 2vw;
                         h3 {
                             font-size: 1.5rem;
                             font-weight: 500;
@@ -427,6 +397,50 @@ h1 {
                     }
                 }
             }
+            .btn {
+                // outline: 1px dashed green;
+                opacity: 0;
+                border: none;
+                // outline: 1px solid red;
+                width: 4.5rem;
+                height: 4.5rem;
+                border-radius: 50%;
+
+                -webkit-box-shadow: 0px 0px 20px -13px rgba(66, 68, 90, 1);
+                -moz-box-shadow: 0px 0px 20px -13px rgba(66, 68, 90, 1);
+                box-shadow: 0px 0px 20px -13px rgba(66, 68, 90, 1);
+
+                svg {
+                    width: 2rem;
+                    fill: #b9b9b9;
+                    color: #b9b9b9;
+                }
+
+                &:hover {
+                    -webkit-box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
+                    -moz-box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
+                    box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
+                }
+            }
+
+            .btn-prev,
+            .btn-next {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 50%;
+            }
+
+            .btn-prev {
+                left: 0;
+                transform: translate(-50%, -50%);
+            }
+
+            .btn-next {
+                right: 0;
+                transform: translate(50%, -50%);
+            }
         }
 
         .slogans {
@@ -440,6 +454,31 @@ h1 {
 
             .slogan--left {
                 outline: 1px dashed green;
+            }
+        }
+
+        .test-wrapper {
+            margin: 2rem 0;
+            outline: 1px dashed blue;
+            padding: 1rem;
+            position: relative;
+
+            .test {
+                border: 1px solid red;
+                width: 360px;
+                height: 10rem;
+                opacity: 1;
+
+                &:hover {
+                    opacity: 0;
+                }
+            }
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 1;
             }
         }
     }

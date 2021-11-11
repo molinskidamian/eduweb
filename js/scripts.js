@@ -31,6 +31,26 @@
 })();
 
 (function () {
+    // main-search--form
+    const form = document.querySelector("#main-search");
+    const searchBtn = document.querySelector("#main-search--btn");
+    const searchInput = document.querySelector("#main-search--input");
+    const icon = document.querySelector("#main-search--icon");
+
+    searchInput.addEventListener("focus", () => {
+        searchBtn.style.background = "#505258";
+        icon.style.color = "#acacac";
+    });
+
+    searchInput.addEventListener("blur", () => {
+        searchBtn.style.background = "#37393d";
+        icon.style.color = "#717274";
+    });
+
+    console.log(form);
+})();
+
+(function () {
     const wrapper = document.querySelector(".slider-inner");
     const courses = document.querySelectorAll(".last-lern--course");
     const btnPrev = document.querySelector(".btn-prev");

@@ -4,7 +4,7 @@
     const items = document.querySelectorAll(".main-nav--item");
     const subMenu = document.querySelector(".main-nav--item > ul");
 
-    items[0].addEventListener("click", function () {
+    items[0].addEventListener("click", () => {
         console.log("click");
 
         if (showMenu === false) {
@@ -30,6 +30,7 @@
     });
 })();
 
+// main-search--form
 (function () {
     // main-search--form
     const form = document.querySelector("#main-search");
@@ -40,11 +41,15 @@
     searchInput.addEventListener("focus", () => {
         searchBtn.style.background = "#505258";
         icon.style.color = "#acacac";
+        searchBtn.style.transition = "all .3s ease-in-out";
+        searchInput.style.transition = "all .3s ease-in-out";
     });
 
     searchInput.addEventListener("blur", () => {
         searchBtn.style.background = "#37393d";
         icon.style.color = "#717274";
+        searchBtn.style.transition = "all .3s ease-in-out";
+        searchInput.style.transition = "all .3s ease-in-out";
     });
 
     console.log(form);
@@ -61,22 +66,15 @@
         return numItems.length * itemWidth.offsetWidth;
     }
 
-    console.log(
-        `Szerokość kursów: ${courses[0].offsetWidth * courses.length}px`
-    );
+    console.log(`Szerokość kursów: ${courses[0].offsetWidth * courses.length}px`);
 
     btnNext.addEventListener("click", () => {
         console.log("next");
         // wrapper.scrollLeft += 280;
 
-        const countSteps = (wrapper, item) => {
-            return;
-        };
+        const countSteps = (wrapper, item) => {};
 
-        if (
-            steps <=
-            courses.length * courses[0].offsetWidth - wrapper.offsetWidth
-        ) {
+        if (steps <= courses.length * courses[0].offsetWidth - wrapper.offsetWidth) {
             // steps += 325;
             steps += 376;
             courses.forEach((cours) => {

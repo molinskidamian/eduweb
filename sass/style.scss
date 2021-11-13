@@ -355,27 +355,16 @@ h1 {
                         margin-right: 0;
                     }
 
-                    // &:hover {
-                    //     transition: box-shadow 0.4s ease-in-out;
-                    //     -webkit-box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
-                    //     -moz-box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
-                    //     box-shadow: 0px 0px 30px -11px rgba(66, 68, 90, 1);
-                    //     background-color: #ecd61a;
-                    //     // transform: scaleY(1);
-                    //     transform-origin: top center;
-                    //     transform: translate(-100%, 50%) translate(100%, -50%);
-                    //     transition: all 0.2s ease-in-out;
-                    // }
-
                     &:hover > header {
                         height: 100%;
-                        transition: height 0.4s ease-in-out;
+                        transition: height 1s ease-in-out;
                         border-radius: 0.5rem;
+                        background-color: red;
                     }
 
                     .content--item {
                         // padding-top: 8vw;
-                        padding: 2vw;
+                        padding: 2rem;
                         h3 {
                             font-size: 1.5rem;
                             font-weight: 500;

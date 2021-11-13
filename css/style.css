@@ -292,11 +292,12 @@ h1 {
             margin-right: 0; }
           .content .slider .slider-inner .last-lern--course:hover > header {
             height: 100%;
-            -webkit-transition: height 0.4s ease-in-out;
-            transition: height 0.4s ease-in-out;
-            border-radius: 0.5rem; }
+            -webkit-transition: height 1s ease-in-out;
+            transition: height 1s ease-in-out;
+            border-radius: 0.5rem;
+            background-color: red; }
           .content .slider .slider-inner .last-lern--course .content--item {
-            padding: 2vw; }
+            padding: 2rem; }
             .content .slider .slider-inner .last-lern--course .content--item h3 {
               font-size: 1.5rem;
               font-weight: 500; }

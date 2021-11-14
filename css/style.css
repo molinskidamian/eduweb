@@ -243,14 +243,14 @@ h1 {
         display: -ms-flexbox;
         display: flex;
         padding: 1rem;
-        overflow: hidden;
-        outline: 1px dashed red; }
+        overflow: hidden; }
         .content .slider .slider-inner .last-lern--course {
           min-width: 360px;
           max-width: 360px;
           height: 13rem;
           margin-right: 1rem;
           border-radius: 0.5rem;
+          position: relative;
           -webkit-box-shadow: 0px 0px 20px -13px #42445a;
           box-shadow: 0px 0px 20px -13px #42445a; }
           .content .slider .slider-inner .last-lern--course header > .header--inner {
@@ -270,32 +270,42 @@ h1 {
               position: relative;
               width: 100%;
               height: 100%; }
+              .content .slider .slider-inner .last-lern--course header > .header--inner .header--left svg {
+                position: absolute;
+                top: 0.5rem;
+                left: 0.5rem;
+                border-radius: 50%;
+                z-index: 20; }
             .content .slider .slider-inner .last-lern--course header > .header--inner .header--right {
               width: 100%;
               height: 100%;
               line-height: 3rem;
               text-align: right;
               padding-right: 1rem; }
-            .content .slider .slider-inner .last-lern--course header > .header--inner svg {
-              position: absolute;
-              top: 0.5rem;
-              left: 0.5rem;
-              border-radius: 50%; }
-            .content .slider .slider-inner .last-lern--course header > .header--inner span {
-              color: #636262;
-              background-color: #fff;
-              padding: 0 1rem;
-              border-radius: 0.5rem;
-              font-weight: 600;
-              font-size: 0.8rem; }
+              .content .slider .slider-inner .last-lern--course header > .header--inner .header--right span {
+                color: #636262;
+                background-color: #fff;
+                padding: 0 1rem;
+                border-radius: 0.5rem;
+                font-weight: 600;
+                font-size: 0.8rem;
+                z-index: 20; }
           .content .slider .slider-inner .last-lern--course:last-child {
             margin-right: 0; }
           .content .slider .slider-inner .last-lern--course:hover > header {
-            height: 100%;
-            -webkit-transition: height 1s ease-in-out;
-            transition: height 1s ease-in-out;
-            border-radius: 0.5rem;
-            background-color: red; }
+            border-radius: 0.5rem; }
+          .content .slider .slider-inner .last-lern--course .content--show {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3rem;
+            z-index: 10;
+            opacity: 0; }
+            .content .slider .slider-inner .last-lern--course .content--show p.time-left {
+              color: white;
+              margin-top: 1.5rem;
+              margin-left: 2rem; }
           .content .slider .slider-inner .last-lern--course .content--item {
             padding: 2rem; }
             .content .slider .slider-inner .last-lern--course .content--item h3 {
@@ -308,12 +318,41 @@ h1 {
             .content .slider .slider-inner .last-lern--course .content--item progress {
               width: 100%;
               height: 1.3rem; }
+          .content .slider .slider-inner .last-lern--course:hover > .content--show {
+            background: #ecc31a;
+            background: linear-gradient(315deg, #ecc31a 0%, #ecd61a 35%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecc31a",endColorstr="#ecd61a",GradientType=1);
+            min-height: calc(145px);
+            max-height: 360px;
+            border-radius: 0.5rem;
+            padding-top: 4rem;
+            opacity: 1;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; }
+            .content .slider .slider-inner .last-lern--course:hover > .content--show h3 {
+              color: white;
+              margin-left: 1rem;
+              font-size: 1.5rem; }
+            .content .slider .slider-inner .last-lern--course:hover > .content--show button {
+              background-color: transparent;
+              border: 3px solid white;
+              font-size: 1.2rem;
+              color: white;
+              text-transform: uppercase;
+              font-weight: 600;
+              border-radius: 2rem;
+              padding: 0.5rem 1rem;
+              text-align: right;
+              position: absolute;
+              right: 1rem;
+              bottom: 1rem; }
       .content .slider .btn {
         opacity: 0;
         border: none;
         width: 4.5rem;
         height: 4.5rem;
         border-radius: 50%;
+        z-index: 100;
         -webkit-box-shadow: 0px 0px 20px -13px #42445a;
         box-shadow: 0px 0px 20px -13px #42445a; }
         .content .slider .btn svg {

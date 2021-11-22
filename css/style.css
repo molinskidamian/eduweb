@@ -512,6 +512,7 @@ Small devices (landscape phones, 576px and up) */
         width: 15rem;
         padding: 1.5rem;
         border-radius: 1rem;
+        outline: 1px dashed red;
         -webkit-box-shadow: 0px 8px 10px -7px rgba(66, 68, 90, 0.5);
         box-shadow: 0px 8px 10px -7px rgba(66, 68, 90, 0.5); }
         .main-nav--item .main-nav--sub-menu li {

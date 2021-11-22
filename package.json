@@ -1,19 +1,22 @@
 {
-  "name": "eduweb",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/molinskidamian/eduweb.git"
-  },
-  "author": "Damian Molinski",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/molinskidamian/eduweb/issues"
-  },
-  "homepage": "https://github.com/molinskidamian/eduweb#readme"
+    "name": "eduweb",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/molinskidamian/eduweb.git"
+    },
+    "author": "Damian Molinski",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/molinskidamian/eduweb/issues"
+    },
+    "homepage": "https://github.com/molinskidamian/eduweb#readme",
+    "devDependencies": {
+        "parcel": "^2.0.1"
+    }
 }

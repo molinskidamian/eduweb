@@ -1,5 +1,5 @@
+// roll-up/down .main-menu
 (function () {
-    // roll-up/down menu
     let showMenu = false;
     const items = document.querySelectorAll(".main-nav--item");
     const subMenu = document.querySelector(".main-nav--item > ul");
@@ -19,8 +19,8 @@
     });
 })();
 
+// promo close
 (function () {
-    // promo close
     const promo = document.querySelector(".promo");
     const promoClose = document.querySelector(".promo-close");
 
@@ -55,6 +55,7 @@
     console.log(form);
 })();
 
+// Slider .last-cours
 (function () {
     const wrapper = document.querySelector(".slider-inner");
     const courses = document.querySelectorAll(".last-lern--course");
